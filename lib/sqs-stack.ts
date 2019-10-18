@@ -5,5 +5,8 @@ export class SqsStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
     
+    new sqs.Queue(this, 'TestQueue', {
+      fifo: true
+    });
   }
 }

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import cdk = require('@aws-cdk/core');
-import { SampleSqsCdkStack } from '../lib/sample-sqs-cdk-stack';
+import { SqsStack } from '../lib/sqs-stack';
 
 const app = new cdk.App();
-new SampleSqsCdkStack(app, 'SampleSqsCdkStack');
+new SqsStack(app, 'SqsStack');
